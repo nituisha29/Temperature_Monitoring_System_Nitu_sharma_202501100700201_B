@@ -5,7 +5,7 @@ min_limit = float(input("Enter minimum temperature limit: "))
 max_limit = float(input("Enter maximum temperature limit: "))
 print("\nMonitoring Temperature...\n")
 while True:
-    temperature = random.uniform(min_limit, max_limit)
+    temperature = random.uniform(-273.15,1000)
     print("Current Temperature:", round(temperature,2))
     if temperature > max_limit:
         print("Alert: Temperature is too high")
